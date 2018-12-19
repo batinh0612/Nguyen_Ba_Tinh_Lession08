@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var soM, soN, soK;
+		var M,N,K;
+		do {
+			soN = prompt("Nhập N: ");
+			N = parseInt(soN);
+			soM = prompt("Nhập M: ");
+			M = parseInt(soM);
+			if (M<N) {
+				alert("Bạn phải nhập M>=N !");
+			}
+		} while (M<N);
+		soK = prompt("Nhập K: ");
+		K = parseInt(soK);
+		var S=0;
+		for (var i = N+1; i <= M-1; i++) {
+			if (i%K==0) {
+				S = S+i;
+			}
+		}
+		document.writeln("Tổng là: " + S);
+	</script>
+</body>
+</html>

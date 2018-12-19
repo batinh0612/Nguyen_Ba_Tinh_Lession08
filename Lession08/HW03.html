@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var sn;
+		var n;
+		do {
+			sn = prompt("Nhập số nguyên dương n: ");
+			n = parseInt(sn);
+		} while (n<=0);
+		var S=0;
+		for (var i = 1; i <= n ; i++) {
+			S = S + 1/i;
+		}
+		document.writeln("Tổng là: " +  S);
+	</script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 1</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		#menu-top{
+			width: 100%;
+			height: 100px;
+			background-color: #A60E0E;
+			position: relative;
+		}
+		#menu-top1{
+			width: 100%;
+			height: 37px;
+			background-color: #810808;
+			position: absolute;
+			top: 62px;
+		}
+		#zent{
+			margin-left: 15%;
+			padding-top: 20px;
+		}
+		li{
+			float: left;
+		}
+		.menu-zent{
+			color: white;
+			list-style: none;
+			padding: 10px 13px;
+			border-left: 1px;
+			border-color: white;
+			border-right: 1px solid white;
+		}
+		.menu-zentt{
+			list-style: none;
+			color: white;
+			padding: 10px 13px;
+		}
+		#div-img{
+			width: 100%;
+			height: 120px;
+			background-color: #F2EAEA;
+		}
+		#img{
+			width: 45%;
+			height: 75px;
+			margin-left: 27%;
+			margin-top: 4px;
+/* 			z-index: 1; */
+		}
+		/* #img_2{
+			margin-left: -80px;
+			margin-bottom: 60px;
+			z-index: 100;
+		} */
+		.quangcao{
+			font-size: 13px;
+			margin-left: 66%;
+			padding-top: 13px;
+		}
+		#container{
+			width: 66%;
+			height: 2800px;
+			background-color: white;
+			margin-left: 17%;
+			position: relative;
+		}
+		#content-right{
+			width: 25%;
+			height: 2500px;
+			background-color: blue;
+			margin-left: 75%;
+		}
+		#content-left{
+			width: 73%;
+			height: 280px;
+			background-color: white;
+			position: absolute;
+			top: 0px;
+		}
+		#nga{
+			font-size: 25px;
+			text-align: center;
+			margin-top: 5px;
+		}
+		#img_nga{
+			width: 57%;
+			height: 220px;
+			margin-left: 43%;
+			margin-top: 10px;
+		}
+		#div_content1{
+			width: 37%;
+			height: 220px;
+			margin: -223px 4px 4px 10px;
+		}
+		.time{
+			list-style: none;
+			border-right: 1px solid black;
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		.tg{
+
+			margin-left: 2px;
+			list-style: none;
+			padding-left: 5px;
+
+		}
+		#cnb{
+			padding-left: 1px;
+			margin-top: 7px;
+		}
+		#content-left1{
+			width: 73%;
+			height: 380px;
+			position: absolute;
+			top: 300px;
+			background-color: white;
+		}
+		.container1{
+			width: 35%;
+			height: 380px;
+			float: left;
+			border-right : 1px solid gray;	
+			margin-right: 10px;
+		}
+		.container2{
+			width: 33%;
+			height: 380px;
+			float: left;
+			margin-left: 4px;
+			border-right : 1px solid gray;	
+			margin-right: 10px;
+		}
+		.container3{
+			width: 26%;
+			height: 380px;
+			float: left;
+			position: relative;
+		}
+		.hr{
+			position: absolute;
+			top: 115px;
+			left: 17px;
+		}
+		.hr1{
+			position: absolute;
+			top: 260px;
+			left: 17px;
+		}
+		.hr2{
+			position: absolute;
+			top: 115px;
+			left: 17px;
+		}
+		.hr3{
+			position: absolute;
+			top: 400px;
+		}
+		#content-left2{
+			width: 73%;
+			height: 270px;
+			background-color: white;
+			position: absolute;
+			top: 720px;
+		}
+		.div_fb{
+			border-left: 1px solid -webkit-transform: ;
+			   -moz-transform: ;
+			    -ms-transform: ;
+			     -o-transform: ;
+			        transform: ;;
+			position: relative;
+		}
+		.hr4{
+			position: absolute;
+			top: 55px;
+			left: 17px;
+		}
+		.hr5{
+			position: absolute;
+			top: 160px;
+			left: 17px;
+		}
+		.hr6{
+			position: absolute;
+			top: 290px;
+		}
+		#content-left3{
+			width: 73%;
+			height: 400px;
+			background-color: white;
+			position: absolute;
+			top: 1030px;
+		}
+		.div_content3{
+			width: 50%;
+			height: 363px;
+			margin-top: 10px;		
+			float: left;
+		}
+		.div_content4{
+			width: 50%;
+			height: 363px;
+			margin-top: 10px;
+			float: left;		
+		}
+		#div_content5{
+			width: 73%;
+			height: 305px;
+			background-color: white;
+			position: absolute;
+			top: 1470px;
+		}
+		#div_content6{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 1815px;
+			float: right;
+		}
+		.hoigiao{
+			float: right;
+			width: 65%;
+			height: 250px;
+			margin-top: 18px;
+			margin-left: 20px;
+		}
+		#div_content7{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 2050px;
+			float: right;
+		}
+		.dulich{
+			float: right;
+			width: 65%;
+			height: 250px;
+			margin-top: 18px;
+		}
+		#div_content8{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 2292px;
+			float: right;
+		}
+		#div_content9{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 2532px;
+			float: right;
+		}
+		#div_content10{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 2532px;
+			float: right;
+		}
+		#div_content11{
+			width: 73%;
+			height: 200px;
+			background-color: white;
+			position: absolute;
+			top: 2932px;
+			float: right;
+		}
+		#div_bottom{
+			width: 100%;
+			height: 120px;
+			background-color: gray;
+		}
+		#div_btn{
+			width: 65%;
+			height: 100px;
+			background-color: gray;
+			margin-left: 210px;
+		}
+		#div_btn{
+			list-style: none;
+		}
+		.bnt1{
+			border-right: 1px solid white;
+
+		}
+		#div_btn1{
+			list-style: none;
+			float: left;
+			margin-top: -20px;
+			margin-left: 200px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div id="menu-top">
+		<p id="zent"><font color="white" size="6"><b>ZENT GROUP</b></font></p>
+		<div id="menu-top1">
+			<ul>
+				<li class="menu-zent" style="margin-left: 11%">Tài chính</li>
+				<li class="menu-zent">Việt Nam</li>
+				<li class="menu-zent">Thế giới</li>
+				<li class="menu-zent">Diễn đàn</li>
+				<li class="menu-zent">Kinh tế</li>
+				<li class="menu-zent">Nhịp sống mới</li>
+				<li class="menu-zent">Thể thao</li>
+				<li class="menu-zent">Học tiếng Anh</li>
+				<li class="menu-zent">Hình ảnh</li>
+				<li class="menu-zent">Audio</li>
+				<li class="menu-zentt">Video</li>
+			</ul>
+		</div>
+	</div>
+	<div id="div-img">
+		<p class="quangcao">QUẢNG CÁO</p>
+		<img src="images/EZV3A6D4CREHPLDIZGR2W5.jpg" id="img">
+		<!-- <img src="images/c_30_us.png" id="img_2"> -->
+
+	</div>
+	<div id="container">
+		<div id="content-right">
+			
+		</div>
+		<div id="content-left">
+			<p id="nga"><b>Nga nói khủng bố khiến phi cơ Nga bị đâm</b></p>
+			<p><img src="images/151117112223_russian_plane_640x360_afp_nocredit.jpg" id="img_nga"></p>
+			<div id="div_content1">
+				<p class="content1">Nghe nói hành động khủng bố đã khiến phi cơ của Nga bị đâm ở Ai Cập hồi tháng 10 và giết hại tất cả 224 người trên máy bay.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr size="1" width="20%" color="" style="margin-top: 33px; margin-bottom: 6px;">
+				<p>Phi cơ Nga: 'bom trong khoang hành lý'</p>
+				<p>Nga nói chưa kết luận về vụ rơi máy bay</p>
+				<p>Máy bay hàng không Nga 'rơi vì bom'?</p>
+			</div>
+			<hr width="100%" size="1px" color="#106EB2" style="margin-top: 17px">
+		</div>
+		<div id="content-left1">
+			<div class="container1">
+				<img src="images/151117212649_wembley_fans_promo_640x360_reuters_nocredit.jpg" width="95%">
+				<p style="font-size: 20px"><b>Bóng đá: Tuyển Anh thắng Pháp 2-0</b></p>
+				<p style="margin-top: 10px; text-align: justify; margin-right: 12px;" >Tuyển Anh thắng Pháp 2-0 trên sân Wembley nhờ công của Alli ở phút 39 và Rooney phút 47, trong trận cầu diễn ra chỉ vài ngày sau vụ khủng bố ở Paris.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">5 giờ trước</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr size="1" width="20%" color="" style="margin-top: 33px; margin-bottom: 6px;">
+				<p>Anh Pháp giao hữu: Trận thách thức khủng bố</p>
+			</div>
+			<div class="container2">
+				<img src="images/151117174502_gen_tran_dai_quang_640x360_hoangdinhnamafpgettyimages_nocredit.jpg" width="95%">
+				<p style="font-size: 20px; text-align: justify; margin-right: 12px;"><b>Tham nhũng, ma túy đông gấp bội 'đối lập'?</b></p>
+				<p style="margin-top: 10px; text-align: justify; margin-right: 12px;">Bộ trưởng công an Trần Đại Quang cho biết trong hơn ba năm qua: Bộ này có 350 đối tượng 'lập hội chống đối</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Việt Nam</font></li>
+				</ul>
+				<hr size="1" width="20%" color="" style="margin-top: 33px; margin-bottom: 6px;">
+				<p>Luật Báo chí VN là 'vũ khí phe bảo thủ'?</p>
+				<p>Nhân sự và tư duy chính trị của Đảng</p>
+			</div>
+			<div class="container3">
+				<p style="font-size: 20px; float: left;"><b>Charlie Sheen xác nhận nhiễm HIV</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr width="80%" color="gray" size="1px" class="hr">
+				<p style="font-size: 20px; margin-top: 130px;"><b>Bắt nghi can vụ giết bà Hà Linh</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Việt Nam</font></li>
+				</ul>
+				<hr width="80%" color="gray" size="1px" class="hr1">
+				<p style="font-size: 20px; margin-top: 90px;"><b>Úc nhận 5 người tỵ nạn Syria đầu tiên</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr width="80%" color="gray" size="1px" class="hr2">
+			</div>
+			<hr width="100%" size="1px" color="gray" class="hr3">
+		</div>
+		<div id="content-left2">
+			<div style="width: 48%; height: 270px; float: left; position: relative;">
+				<p><b style=" font-size: 17px;">Tổng thống Pháp thề xóa tan IS</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr width="93%" size="1px" color="gray" style="position: absolute; top: 55px;">
+				<p style="margin-top: 50px; font-size: 17px;"><b>Sam Rainsy hoãn ngày về nước</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+				<hr width="93%" size="1px" color="gray" style="position: absolute; top: 160px;">
+				<p style="margin-top: 90px; font-size: 17px;"><b>Nhiều bang Mỹ ngưng nhận tỵ nạn Syria</b></p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+			</div>
+			<div style="width: 51%; height: 270px; float: left;" class="div_fb">
+				<p style="margin-left: 17px; font-size: 17px;"><b>Cựu cán bộ an ninh bị tù vì Facebook</b></p>
+				<ul id="cnb" style="margin-left: 17px;">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Việt Nam</font></li>
+				</ul>
+				<hr width="94%" size="1px" color="gray" class="hr4">
+				<p style="margin-left: 17px; font-size: 17px; margin-top: 50px;"><b>Anh-Pháp:'Không phải trận cầu thông thường</b></p>
+				<ul id="cnb" style="margin-left: 17px;">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thể thao</font></li>
+				</ul>
+				<hr width="94%" size="1px" color="gray" class="hr5">
+				<p style="margin-left: 17px; font-size: 17px; margin-top: 70px;"><b>Vietcombank ngưng dịch vụ ATM cho ngoại kiều</b></p>
+				<ul id="cnb" style="margin-left: 17px;">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">16 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Kinh tế</font></li>
+				</ul>
+			</div>
+			<hr width="100%" size="1px" color="gray" class="hr6">
+		</div>
+		<div id="content-left3">
+			<p><font size="5">Nghe/Xem</font> <font size="5" color="red">></font></p>
+			<div class="div_content3">
+				<div style="width: 100%; height: 120px;">
+					<img src="images/150904143012_truong_duy_nhat_640x360_bbc_nocredit.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>Đại biểu Nghĩa hỏi Thủ tướng 'quá khó'</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">17 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Multimedia</font></li>
+					</ul>
+				</div>
+				<div style="width: 100%; height: 120px;">
+					<img src="images/151116113457_hanoi_french_embassy_gathering_640x360_ap_nocredit.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>Tưởng niệm các nạn nhân Paris tại Hà Nội</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">16 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Multimedia</font></li>
+					</ul>
+				</div>
+				<div style="width: 100%; height: 120px; border-left: ;">
+					<img src="images/151114143031_bataclan_theatre_640x360_ap_nocredit.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>Cảnh sát giải cứu con tin ở Paris</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">14 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Multimedia</font></li>
+					</ul>
+				</div>
+			</div>
+			<div class="div_content4">
+				<div style="width: 100%; height: 120px; border-left: ;">
+					<img src="images/150215132438_hangout_640x360_bbc_nocredit.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>Thủ tướng 'sẽ không đi ra ngoài đường lối'</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">17 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Multimedia</font></li>
+					</ul>
+				</div>
+				<div style="width: 100%; height: 120px; border-left: ;">
+					<img src="images/151115051218_paris_bataclan_640x360_getty_nocredit.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>'Xả sung' ở rạp hát Bataclan, Paris</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">17 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Multimedia</font></li>
+					</ul>
+				</div>
+				<div style="width: 100%; height: 120px; border-left: ;">
+					<img src="images/151114151241_paris-candle.jpg" height="100px" width="47%" style="float: left;">
+					<p style="float: top; margin-left: 50%; font-size: 17px;"><b>Paris sau các vụ tấn công tối 13/11/2015</b></p>
+					<ul id="cnb" style="margin-left: 17px;">
+						<li class="fa fa-clock-o" class="tg" style="margin-left: 3%"></li>
+						<li class="time">14 tháng 11 2015</li>
+						<li class="tg"><font color="#9C0806">Thế giới</font></li>
+					</ul>
+				</div>
+			</div>
+			<hr width="100%" size="1px" color="gray" class="hr3" style="margin-top: 20px;">
+		</div>
+		<div id="div_content5">
+			<p><font size="5">Điểm nhấn</font> <font color="red" size="5">></font></p>
+			<img src="images/150921123226_islamic_state_flag_is_640x360_islamicstate_nocredit.jpg" style="margin-left: 227px; margin-top: 25px; width: 55%; height: 220px;">
+			<div style="width: 32%; height: 230px; margin-top: -220px;">
+				<p style="font-size: 21px; float: left;"><b>IS là gì và nguy hiểm tới đâu?</b></p>
+				<p style="padding-top: 60px;">BBC Tiếng Việt điểm lại các quan điểm đánh giá ý thức hệ, thực lực quân sự của Nhà nước Hồi Giáo.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">16 tháng 11 2015</li>
+					<li class="tg"><font color="#9C0806">Thế giới</font></li>
+				</ul>
+			</div>
+			<hr width="100%" size="1px" color="gray" class="hr3" style="margin-top: -75px;">
+		</div>
+		<div id="div_content6">
+			<p><font size="5">Quan điểm</font> <font color="red" size="5">></font></p>
+			<img src="images/151115163552_paris_attack_woman_in_australia_640x360_afpgetty_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px; float: left;">
+			<div class="hoigiao">
+				<p style="font-size: 21px; float: left;"><b>Nhiều người Hồi giáo 'đã khóc' trước Bataclan</b></p>
+				<p style="float: left;">Nhà báo tự do Phạm Cao Phong nói nhiều người Hồi giáo đã thực sự khóc và hát La Marseillaise ở nơi xảy ra khủng bố Paris.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">15 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+		<hr width="73%" size="1px" color="gray" class="hr3" style="margin-top: 1633px;">
+		<div id="div_content7">
+			<p><font size="5">Kinh tế</font> <font color="red" size="5">></font></p>
+			<img src="images/150704103917_eurostar_train_channel_tunnel_calais_640x360_reuters_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px;">
+			<div class="dulich">
+				<p style="font-size: 21px; float: left;"><b>Cổ phiếu du lịch giảm vì tấn công Paris</b></p>
+				<p style="float: left;">Cổ phiếu của các hãng hàng không du lịch của Châu Âu bị giảm mạnh vào thứ Hai vì nhà đầu tư lo lắng về ảnh hưởng của cuộc tấn công ở Paris.</p>
+
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+		<div id="div_content6">
+			<p><font size="5">Quan điểm</font> <font color="red" size="5">></font></p>
+			<img src="images/151115163552_paris_attack_woman_in_australia_640x360_afpgetty_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px; float: left;">
+			<div class="hoigiao">
+				<p style="font-size: 21px; float: left;"><b>Nhiều người Hồi giáo 'đã khóc' trước Bataclan</b></p>
+				<p>Nhà báo tự do Phạm Cao Phong nói nhiều người Hồi giáo đã thực sự khóc và hát La Marseillaise ở nơi xảy ra khủng bố Paris.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">15 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+		<hr width="73%" size="1px" color="gray" class="hr3" style="margin-top: 1870px;">
+		<div id="div_content8">
+			<p><font size="5">Thể thao</font> <font color="red" size="5">></font></p>
+			<img src="images/150904085336_wembley_stadium_640x360_pa_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px; float: left;">
+			<div class="hoigiao">
+				<p style="font-size: 21px; float: left;"><b>Anh Pháp giao hữu: Trận thách thức khủng bố</b></p>
+				<p>Tuyển Pháp sẽ đến Anh với một thông điệp của sự đề kháng sau vụ tấn công đẫm máu.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">17 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+		<hr width="73%" size="1px" color="gray" class="hr3" style="margin-top: 2112px;">
+		<div id="div_content9">
+			<p><font size="5">Xã hội</font> <font color="red" size="5">></font></p>
+			<img src="images/150904085336_wembley_stadium_640x360_pa_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px; float: left;">
+			<div class="hoigiao">
+				<p style="font-size: 21px; float: left;"><b>Dấu ấn Mao: Từ Hồng vệ binh tới ông Tập</b></p>
+				<p>Tuyển Pháp sẽ đến Anh với một thông điệp của sự đề kháng sau vụ tấn công đẫm máu.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">13 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+		<hr width="73%" size="1px" color="gray" class="hr3" style="margin-top: 2500px;">
+		<div id="div_content10">
+			<p><font size="5">Xã hội</font> <font color="red" size="5">></font></p>
+			<img src="images/150904085336_wembley_stadium_640x360_pa_nocredit.jpg" style="margin-left: 0px; margin-top: 12px; width: 30%; height: 100px; float: left;">
+			<div class="hoigiao">
+				<p style="font-size: 21px; float: left;"><b>Dấu ấn Mao: Từ Hồng vệ binh tới ông Tập</b></p>
+				<p>Tuyển Pháp sẽ đến Anh với một thông điệp của sự đề kháng sau vụ tấn công đẫm máu.</p>
+				<ul id="cnb">
+					<li class="fa fa-clock-o" class="tg"></li>
+					<li class="time">13 tháng 11 2015</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="div_bottom">
+		<div>
+			<p style="margin-left: 210px; margin-top: 7px;"><font color="white">Mô hình trang BBC</font></p>
+			<ul id="div_btn">
+				<li><font color="white" class="btn1">News</font></li>
+				<li><font color="white" class="btn1" style="margin-left: 60px;">Sport</font></li>
+				<li><font color="white" class="btn1" style="margin-left: 60px;">Weather</font></li>
+				<li><font color="white" class="btn1" style="margin-left: 60px;">Radio</font></li>
+			</ul>
+			<ul id="div_btn1">
+				<li style="margin-right: 10px;"><font color="white">Điều khoản sử dụng</font></li>
+				<li style="margin-right: 10px;"><font color="white">Về BBC</font></li>
+				<li style="margin-right: 10px;"><font color="white">Chính sách riêng tư</font></li>
+				<li style="margin-right: 10px;"><font color="white">Cookies</font></li>
+				<li style="margin-right: 10px;"><font color="white">Accessibility Help</font></li>
+				<li style="margin-right: 10px;"><font color="white">Parental Guidance</font></li>
+				<li style="margin-right: 10px;"><font color="white">Liên hệ BBC</font></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
